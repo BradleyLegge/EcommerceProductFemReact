@@ -1,0 +1,231 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+:root{
+  --orange: hsl(26, 100%, 60%);
+  --pale-orange: hsl(25, 100%, 94%);
+
+  --very-dark-blue: hsl(220, 13%, 13%);
+  --dark-grayish-blue: hsl(219, 9%, 45%);
+  --light-grayish-blue: hsl(223, 64%, 94%);
+  --lighter-grayish-blue: hsl(223, 64%, 84%);
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%); /* 75% opacity for lightbox bg */
+}
+
+/* App Component */
+
+.main-content{
+  width: 80%;
+  margin: auto;
+  height: 100vh;
+}
+
+.shoe-sections{
+  padding-top: 100px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+/* Navbar Component */ 
+
+.navbar-container{
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+  border-bottom: 1px solid var(--lighter-grayish-blue);
+}
+
+.left-side-navbar{
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.navbar-links{
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.navbar-links li a{
+  color: var(--dark-grayish-blue);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.cart-avatar-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shopping-cart{
+  padding: 20px;
+  cursor: pointer;
+}
+
+.avatar-image{
+  cursor: pointer;
+  width: 40%;
+  height: auto;
+}
+
+/* Shoe Display Component */
+
+.shoe-display-container{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 50%;
+}
+
+.main-shoe{
+  border-radius: 15px;
+  width: 100%;
+  height: auto;
+}
+
+.thumbnail{
+  cursor: pointer;
+  border-radius: 15px;
+  max-width: 20%;
+}
+
+.shoe-display-thumbnail{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Shoe Info Component */
+
+.shoe-info-container{
+  padding-left: 100px;
+  width: 50%;
+}
+
+.title{
+  text-transform: uppercase;
+  color: var(--orange);
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+h1{
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 44px;
+}
+
+.shoe-detail{
+  color: var(--dark-grayish-blue);
+  font-weight: 600;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.price-details{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.new-price{
+  font-size: 32px;
+}
+
+.new-percentage{
+  font-size: 16x;
+  font-weight: 800;
+  background-color: var(--pale-orange);
+  color: var(--orange);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.reg-price{
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-weight: 800;
+  color: var(--lighter-grayish-blue);
+  text-decoration: line-through;
+}
+
+.add-shoe-container{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.plus-minus-shoe-amount{
+  width: 40%;
+  display: flex;
+  align-items: center;
+  background-color: var(--light-grayish-blue);
+  border-radius: 10px;
+  gap: 30px;
+}
+
+.shoe-amount{
+  color: var(--dark-grayish-blue);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.add-to-cart-btn{
+  cursor: pointer;
+  background-color: var(--orange);
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  width: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.add-to-cart{
+  color: var(--dark-grayish-blue);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.minus-btn, .plus-btn{
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  background-color: var(--light-grayish-blue);
+  border: none;
+  border-radius: 10px;
+}
+
+/* Hover States */
+
+.avatar-image:hover{
+  outline: 2px solid var(--orange);
+  border-radius: 100%;
+}
+
+.navbar-links a:hover {
+  font-weight: 700;
+  color: var(--very-dark-blue);
+}
+
+.thumbnail:hover{
+  opacity: .5;
+}
+
+.thumbnail-target{
+  outline: 2px solid var(--orange);
+}
+
+.minus-btn:hover, .plus-btn:hover, .add-to-cart-btn:hover{
+  opacity: .75;
+}
