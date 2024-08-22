@@ -20,6 +20,7 @@
 /* App Component */
 
 .main-content{
+  position: relative;
   width: 80%;
   margin: auto;
   height: 100vh;
@@ -228,4 +229,77 @@ h1{
 
 .minus-btn:hover, .plus-btn:hover, .add-to-cart-btn:hover{
   opacity: .75;
+}
+
+/* Cart Component */
+
+.cart-container{
+  display: none;
+  background-color: var(--white);
+  position: absolute;
+  right: -150px;
+  top: 140px;
+  width: 400px;
+  box-shadow: 0px 10px 20px var(--dark-grayish-blue);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.cart-container p{
+  color: var(--dark-grayish-blue);
+}
+
+.cart-container .cart-title{
+  padding-bottom: 30px; 
+  border-bottom: 1px solid var(--light-grayish-blue);
+  color: var(--black);
+  font-weight: 800;
+}
+
+.items-in-cart{
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.cart-thumbnail{
+  width: 20%;
+  height: auto;
+  border-radius: 10px;
+}
+.cart-info{
+  display: flex;
+  flex-direction: column;
+}
+
+.price-info{
+  display: flex;
+  gap: 10px;
+
+}
+.cart-container .total-price{
+  color: var(--black);
+  font-weight: 800;
+}
+
+.trashcan-btn{
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  background-color: transparent;
+}
+
+
+.checkout-btn{
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px 0;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--orange);
+  color: var(--dark-grayish-blue);
+  font-size: 18px;
+  font-weight: 700;
 }
