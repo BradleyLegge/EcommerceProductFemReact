@@ -379,6 +379,10 @@ h1{
   color: var(--dark-grayish-blue);
 }
 
+.mobile-open-icon{
+  color: var(--very-dark-blue);
+}
+
 .modal-prev-icon, .modal-next-icon, .mobile-prev-icon, .mobile-next-icon{
   height: 20px;
   width: 20px;
